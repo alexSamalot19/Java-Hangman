@@ -25,6 +25,13 @@ public class Game {
         return letter;
     }
 
+    public boolean applyGuess(String letters) {
+        if (letters.length()==0) {
+            throw new IllegalArgumentException("no letter");
+        }
+        return applyGuess(letters.charAt(0));
+    }
+
     // Method to determine if guess is hit or miss
     public boolean applyGuess(char letter){
         letter = normalizeGuess(letter);
