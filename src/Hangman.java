@@ -3,7 +3,6 @@ public class Hangman {
 
         //Make a new instance of a game
         Game game = new Game("treehouse");
-        System.out.println("CLI ran");
 
         Prompter prompter = new Prompter(game);
 

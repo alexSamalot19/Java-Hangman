@@ -8,14 +8,26 @@ public class Game {
     // The answer ot the game should be made when a new game is started
     // The constructor:
     public Game(String answer) {
-        this.answer = answer;
+        this.answer = answer.toLowerCase();
         // Initialize hits and misses
         hits = "";
         misses = "";
     }
 
+    private char normalizeGuess(char letter){
+        if (!Character.isLetter(letter)) {
+            throw new IllegalArgumentException("A letter is Required");
+        }
+        letter = Character.toLowerCase(letter);
+        if (misses.indexOf(letter) != -1 || hits.indexOf(letter) != -1){
+            throw new IllegalArgumentException("letter has already been guessed!");
+        }
+        return letter;
+    }
+
     // Method to determine if guess is hit or miss
     public boolean applyGuess(char letter){
+        letter = normalizeGuess(letter);
         boolean isHit = answer.indexOf(letter) != -1;
 
         if (isHit){
