@@ -18,4 +18,9 @@ public class Prompter {
         return game.applyGuess(guess);
     }
 
+    public void displayProgress() {
+        System.out.printf("Try to solove:  %s %n",
+                game.getCurrentProgress());
+    }
+
 }

@@ -26,5 +26,18 @@ public class Game {
         return isHit;
     }
 
+    //Return the game progress
+    public String getCurrentProgress() {
+        String progress = "";
+        for (char letter : answer.toCharArray()){
+            char display = '-';
+            if(hits.indexOf(letter) != -1){
+                display = letter;
+            }
+            progress += display;
+        }
+        return progress;
+    }
+
 
 }

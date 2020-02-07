@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="29c6cc2e-2287-471e-9af4-ceaae2e1299b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hangman.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hangman.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hangman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Prompter.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prompter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Prompter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Prompter.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
