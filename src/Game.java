@@ -1,9 +1,9 @@
 public class Game {
-    // Will need to know the answer to the game
-    // Should be private because the answer should not change
+    public static final int MAX_MISSES = 7;
     private String answer;
     private String hits;
     private String misses;
+
 
     // The answer ot the game should be made when a new game is started
     // The constructor:
@@ -24,6 +24,10 @@ public class Game {
             misses += letter;
         }
         return isHit;
+    }
+
+    public int getRemainingTries(){
+        return MAX_MISSES-misses.length();
     }
 
     //Return the game progress

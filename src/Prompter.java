@@ -19,7 +19,8 @@ public class Prompter {
     }
 
     public void displayProgress() {
-        System.out.printf("Try to solove:  %s %n",
+        System.out.printf("You have %d tries to solove:  %s %n",
+                game.getRemainingTries(),
                 game.getCurrentProgress());
     }
 
