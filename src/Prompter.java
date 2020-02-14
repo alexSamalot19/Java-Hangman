@@ -37,7 +37,7 @@ public class Prompter {
 
     public void displayOutcome() {
         if(game.isWon()){
-            System.out.printf("You won with %d tries! %n", game.getRemainingTries());
+            System.out.printf("You won with %d tries left! %n", game.getRemainingTries());
         } else{
             System.out.printf("Sorry it was %s %n", game.getAnswer());
         }
